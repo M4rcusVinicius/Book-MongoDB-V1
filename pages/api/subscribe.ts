@@ -7,7 +7,7 @@ let cachedDb: Db = null;
 async function connectToDatabase(uri: string) {
   if (cachedDb) {
     return cachedDb;
-  }
+  } 
 
   const client = await MongoClient.connect(uri, {
     useNewUrlParser: true,
